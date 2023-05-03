@@ -1,9 +1,7 @@
-# This is a header for the application
-# You should read this header and insert your name and your date below as part of the peer review
-# This is a typical part of any program
-# Author: <author>
-# Creation Date: <date>
-# Below is a simple program with several.  You need to identify the issues and correct them.
+# This is the second commit to the repository. This commit fixes the errors in the code.
+# Author: Daniel Johnson
+# Creation Date: 05/03/2023
+
 
 import random
 import time
@@ -17,11 +15,11 @@ def displayIntro():
 
 def chooseCave():
     cave = ''
-        while cave != '1' and cave != '2':
+    while cave != '1' and cave != '2':
             print('Which cave will you go into? (1 or 2)')
             cave = input()
 
-    return caves
+    return cave
 
 def checkCave(chosenCave):
     print('You approach the cave...')
@@ -39,11 +37,11 @@ def checkCave(chosenCave):
     if chosenCave == str(friendlyCave):
         print('Gives you his treasure!')
     else:
-        print 'Gobbles you down in one bite!'
+        print ('Gobbles you down in one bite!')
 
 
 displayIntro()
-caveNumber = choosecave()
+caveNumber = chooseCave()
 checkCave(caveNumber)
     
-print("Thanks for planing")
+print("Thanks for playing")
